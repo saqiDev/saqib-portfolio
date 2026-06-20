@@ -60,7 +60,8 @@
   .section-num{ font-family:'JetBrains Mono',monospace; color:var(--text-mute); font-size:13px; }
   .section-title{ font-size:34px; letter-spacing:-0.5px; }
 
-  .about-grid{ display:grid; grid-template-columns:1fr 1fr; gap:60px; }
+  .about-grid{ display:grid; grid-template-columns:0.8fr 1fr 1fr; gap:50px; align-items:start; }
+  .about-photo{ width:100%; border-radius:14px; border:1px solid var(--line); }
   .about-grid p{ color:var(--text-mute); margin-bottom:16px; font-size:16px; }
   .about-grid p strong{ color:var(--text); font-weight:600; }
 
@@ -161,6 +162,7 @@
     <h2 class="section-title">Who I am</h2>
   </div>
   <div class="about-grid">
+    <img class="about-photo" src="assets/profile.jpg" alt="Saqib Ejaz">
     <div>
       <p>Over the past <strong>4+ years</strong>, I've helped businesses and startups build scalable mobile applications for Android and iOS using Flutter — across fintech, productivity, utility, and business apps.</p>
       <p>My focus stays the same on every build: <strong>performance, clean architecture, and an experience users actually enjoy.</strong></p>
@@ -230,6 +232,16 @@
       <img src="assets/amt3.png" alt="ACE Money Transfer screen 3">
       <img src="assets/amt4.png" alt="ACE Money Transfer screen 4">
     </div>
+    <div class="video-row">
+      <div class="video-card">
+        <div class="vlabel">// app demo</div>
+        <video src="assets/amt-demo-1.mp4" controls muted playsinline poster="assets/amt1.png"></video>
+      </div>
+      <div class="video-card">
+        <div class="vlabel">// app demo 2</div>
+        <video src="assets/amt-demo-2.mp4" controls muted playsinline poster="assets/amt3.png"></video>
+      </div>
+    </div>
   </div>
 
   <div class="project">
@@ -263,11 +275,11 @@
     <div class="video-row">
       <div class="video-card">
         <div class="vlabel">// live app walkthrough</div>
-        <video src="assets/ace-app-demo.mp4" controls muted playsinline poster="assets/union1.jpg"></video>
+        <video src="assets/union-demo-1.mp4" controls muted playsinline poster="assets/union1.jpg"></video>
       </div>
       <div class="video-card">
-        <div class="vlabel">// sign-up flow demo</div>
-        <video src="assets/ace-signup-demo.mp4" controls muted playsinline poster="assets/union2.png"></video>
+        <div class="vlabel">// feature demo</div>
+        <video src="assets/union-demo-2.mp4" controls muted playsinline poster="assets/union2.png"></video>
       </div>
     </div>
   </div>
